@@ -278,6 +278,13 @@ public interface PhotoEditor {
     boolean isCacheEmpty();
 
     /**
+     * Set selected view
+     *
+     * @param selectedView view to set as selected
+     */
+    void setSelectedView(View selectedView);
+
+    /**
      * Builder pattern to define {@link PhotoEditor} Instance
      */
     class Builder {

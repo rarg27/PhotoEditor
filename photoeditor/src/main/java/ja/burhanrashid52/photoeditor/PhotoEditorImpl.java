@@ -343,4 +343,9 @@ class PhotoEditorImpl implements PhotoEditor {
     public boolean isCacheEmpty() {
         return viewState.getAddedViewsCount() == 0 && viewState.getRedoViewsCount() == 0;
     }
+
+    @Override
+    public void setSelectedView(View selectedView) {
+        viewState.setCurrentSelectedView(selectedView);
+    }
 }
